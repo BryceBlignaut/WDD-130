@@ -1,16 +1,38 @@
-.home-title {
-    color: white
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Slab&display=swap');
+
+:root{
+
+    --heading-font: "Roboto Slab";
+    --paragraph-font: "Noto Serif", Helvetica, sans-serif;
 }
+
+
+
+.home-title {
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
 h4 {
     color:white
 }
 
 .msg h2{
     color: white;
+    font-family: var(--heading-font)
 }
 
 .msg p{
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 #content {
@@ -20,12 +42,17 @@ h4 {
 }
 body {
     background-color: #4e878c;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 
 }
 
 header {
     background-color: #93e5ab;
-    color: white
+    color: white;
+    font-family: var(--heading-font)
 }
 
 nav {
@@ -34,6 +61,7 @@ nav {
 nav a {
     color:white;
     text-decoration: none;
+    padding: 35px;
 
 }
 
@@ -71,11 +99,20 @@ section{
 .book {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+
 }
 
 .join {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover{
@@ -86,12 +123,21 @@ section{
     color: #93e5ab;
 }
 .msg{
-    color: whitesmoke
+    color: whitesmoke;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
     background-color: #4e878c;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
+
+footer .social img{
+    padding-top: 15px;
+}
+
 footer p {
     font-size: 1.2em;
 }    
@@ -112,8 +158,22 @@ footer p a:hover{
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img{
     width: 100%;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid black;
+}
+main section img {
+    box-sizing: border-box;
 }
