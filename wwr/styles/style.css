@@ -6,7 +6,48 @@
     --paragraph-font: "Noto Serif", Helvetica, sans-serif;
 }
 
+.river_section{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
 
+.content_paragraph{
+    grid-column-start: 2 ;
+    grid-column-end: 7;
+    text-align: left;
+    font-family: var(--paragraph-font);
+    color: white;
+}
+
+.sub-title{
+    font-family: var(--heading-font);
+    height: 100px;
+    text-align: center;
+    display: grid;
+    margin-top: 50px;
+    color: white;
+    font-size: 3em;
+}
+
+.spacer{
+    font-family: var(--heading-font);
+    height: 100px;
+    text-align: center;
+    display: grid;
+    margin-top: 50px;
+    color: white;
+    font-size: 2em;
+}
+
+.content_image{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100%;
+}
 
 .home-title {
     color: white;
