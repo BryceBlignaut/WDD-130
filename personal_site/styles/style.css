@@ -1,0 +1,26 @@
+footer{
+    background-color: #b80c09;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.social img{
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #de9151 ;
+    color: white;
+    font-family: var(--heading-font);
+}
