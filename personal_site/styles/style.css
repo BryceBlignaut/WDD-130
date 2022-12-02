@@ -147,3 +147,21 @@ p {
 .html {width: 80%; background-color: #04AA6D;} /* Green */
 .css {width: 75%; background-color: #003DA5;} /* Blue */
 .js {width: 75%; background-color: #002E5D;} /* Red */
+
+.subcontent_img {
+    height: 200px;
+    float: left;
+    grid-column: 2;
+}
+
+#content_section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#p_under {
+    font-family: var(--heading-font);
+    font-size: large;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
