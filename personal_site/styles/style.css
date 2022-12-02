@@ -91,9 +91,11 @@ nav a:hover {
         font-size: 2em;
 }
 
-.profile_pic {
+#profile_pic {
     height: 200px;
     float: left;
+    border-radius: 50%;
+    grid-column: 2;
 }
 h1 {
     text-align: center;
@@ -104,9 +106,44 @@ h1 {
 
 }
 
+#title {
+    text-align: center;
+    font: var(--heading-font);
+    font-size: xx-large;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    grid-column: 3;
+
+}
+
 p {
     font-family: var(--heading-font);
     font-size: large;
 
 
 }
+#profile_pic_and_title {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skill_container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 80%; background-color: #04AA6D;} /* Green */
+.css {width: 75%; background-color: #003DA5;} /* Blue */
+.js {width: 75%; background-color: #002E5D;} /* Red */
